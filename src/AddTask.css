@@ -1,0 +1,50 @@
+.add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-task input {
+    width: 350px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    outline: none;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 8px 8px 15px #b8b8b8, -8px -8px 15px #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-task input:focus {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: inset 6px 6px 12px #c0c0c0, inset -6px -6px 12px #ffffff;
+    transform: scale(1.02);
+}
+
+.add-task button {
+    margin-left: 20px;
+    padding: 15px 25px;
+    background: linear-gradient(145deg, #5a54ff, #4b43f5);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 8px 15px #b3b3b3, -8px -8px 15px #ffffff;
+}
+
+.add-task button:hover {
+    background: linear-gradient(145deg, #4b43f5, #5a54ff);
+    box-shadow: 0 0 20px #8e83ff, 0 0 40px #8e83ff, 0 0 60px #8e83ff;
+    transform: scale(1.05) translateY(-3px);
+}
+
+.add-task button:active {
+    background: linear-gradient(145deg, #4b43f5, #5a54ff);
+    box-shadow: inset 8px 8px 15px #b3b3b3, inset -8px -8px 15px #ffffff;
+    transform: scale(1.02) translateY(1px);
+}

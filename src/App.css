@@ -1,0 +1,134 @@
+/* General App styling */
+.App {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #ccc, -10px -10px 30px #fff;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* AddTask container */
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.add-task input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff;
+  transition: all 0.3s ease;
+}
+
+.add-task input:focus {
+  box-shadow: inset 5px 5px 10px #ccc, inset -5px -5px 10px #fff;
+  transform: scale(1.02);
+}
+
+.add-task button {
+  margin-left: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(145deg, #6c63ff, #584fff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px #aaa, -5px -5px 10px #fff;
+}
+
+.add-task button:hover {
+  background: linear-gradient(145deg, #584fff, #6c63ff);
+  box-shadow: 0 0 15px rgba(104, 96, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Task List container */
+.task-list {
+  width: 100%;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #ccc, -10px -10px 30px #fff;
+}
+
+/* Individual Task item */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px #ccc, -5px -5px 15px #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px #bbb, -8px -8px 20px #fff;
+}
+
+.task-item input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 15px;
+}
+
+/* Task text */
+.task-item span {
+  font-size: 18px;
+  color: #333;
+  flex-grow: 1;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Completed tasks */
+.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Delete button */
+.task-item button {
+  background: linear-gradient(145deg, #ff5e5e, #e14b4b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #bbb, -5px -5px 10px #fff;
+  transition: all 0.3s ease;
+}
+
+.task-item button:hover {
+  background: linear-gradient(145deg, #e14b4b, #ff5e5e);
+  box-shadow: 0 0 15px rgba(255, 94, 94, 0.5);
+  transform: translateY(-3px);
+}
+
+.task-item button:active {
+  background: linear-gradient(145deg, #ff5e5e, #e14b4b);
+  box-shadow: inset 5px 5px 10px #bbb, inset -5px -5px 10px #fff;
+}
